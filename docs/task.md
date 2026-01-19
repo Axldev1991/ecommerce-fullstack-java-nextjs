@@ -13,12 +13,16 @@
   - [ ] Set up project with Tailwind CSS
   - [ ] Define shared components library (Atomic Design)
   - [ ] Implement API client abstraction (Axios/Fetch wrapper)
-- [/] Catalog Module (Phase 2)
+- [x] Catalog Module (Phase 2)
   - [x] Implement Category entity
   - [x] Implement Product entity (ManyToOne)
   - [x] Create Repositories (JpaRepository)
   - [x] Create Catalog Services (Interfaces & Impl)
-  - [/] Create REST Controllers (API Endpoints)
+  - [x] Create REST Controllers (API Endpoints)
+  - [x] Verify End-to-End data flow (Category creation successful)
+- [/] Catalog refinement
+  - [ ] Implement Global Exception Handling
+  - [ ] Implement DTOs for Products and Categories
 
 ## Phase 2: Catalog Module (The Storefront) [ ]
 - [ ] Backend: Category & Product Entities

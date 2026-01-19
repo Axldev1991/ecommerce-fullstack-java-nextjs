@@ -110,9 +110,22 @@ Hemos creado una estructura de paquetes que sigue la **Arquitectura en Capas**:
 - `JpaRepository<T, ID>`: Al extender de aquí, Spring implementa automáticamente los métodos CRUD básicos.
 - `@Repository`: Marca la interfaz para que Spring la gestione como un Bean de persistencia.
 
-## Día 2 (Cont.): Capa de Servicios (Lógica de Negocio)
+### 3. Prueba End-to-End Exitosa (Hito Clave)
+**Logro:** Conexión total entre Cliente -> Controlador -> Servicio -> Repositorio -> DB.
+**Comando:** `curl -X POST http://localhost:8080/api/categories ...`
+**Resultado:** La base de datos asignó ID y las anotaciones de auditoría (`BaseEntity`) funcionaron al devolver `createdAt` y `updatedAt`.
 
-### 1. El por qué de los Servicios
-**Pregunta del USER:** "¿Por qué no usamos el Repositorio directo?"
-**Respuesta:** Por desacoplamiento. El controlador no debe saber cómo se guardan los datos, solo debe invocar una acción de negocio. El Servicio es donde vive la "inteligencia" del E-commerce.
-**Estructura:** Seguiremos el patrón `Interfaz` + `Implementación` para permitir flexibilidad futura (ej: cambiar la lógica sin afectar al controlador).
+```json
+{
+  "id": 1,
+  "createdAt": "2026-01-19T15:25:04...",
+  "updatedAt": "2026-01-19T15:25:04...",
+  "name": "Electrónica",
+  "description": "Todo tipo de gadgets"
+}
+```
+
+## Próximos pasos
+- [ ] Implementar `ProductController`.
+- [ ] Implementar Global Exception Handling (Arquitectura de Errores).
+- [ ] Refactorizar a DTOs (Data Transfer Objects).
