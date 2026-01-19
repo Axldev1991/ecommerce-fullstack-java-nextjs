@@ -7,8 +7,8 @@
 - [x] Initialize Backend Project (Spring Boot) [x]
   - [x] Set up `pom.xml` with modular dependencies
   - [x] Configure `application.yml` for PostgreSQL
-  - [/] Create Global Exception Handling infrastructure (Abstraction)
-  - [/] Define Base Entity (Auditing fields: createdAt, updatedAt)
+  - [x] Create Global Exception Handling infrastructure (Abstraction) [x]
+  - [x] Define Base Entity (Auditing fields: createdAt, updatedAt) [x]
 - [ ] Initialize Frontend Project (Next.js 15+)
   - [ ] Set up project with Tailwind CSS
   - [ ] Define shared components library (Atomic Design)
@@ -20,9 +20,9 @@
   - [x] Create Catalog Services (Interfaces & Impl)
   - [x] Create REST Controllers (API Endpoints)
   - [x] Verify End-to-End data flow (Category creation successful)
-- [/] Catalog refinement
-  - [ ] Implement Global Exception Handling
-  - [ ] Implement DTOs for Products and Categories
+- [x] Catalog refinement [x]
+  - [x] Implement Global Exception Handling [x]
+  - [x] Implement DTOs for Products and Categories [x]
 
 ## Phase 2: Catalog Module (The Storefront) [ ]
 - [ ] Backend: Category & Product Entities

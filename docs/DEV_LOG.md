@@ -126,6 +126,22 @@ Hemos creado una estructura de paquetes que sigue la **Arquitectura en Capas**:
 ```
 
 ## Próximos pasos
-- [ ] Implementar `ProductController`.
-- [ ] Implementar Global Exception Handling (Arquitectura de Errores).
-- [ ] Refactorizar a DTOs (Data Transfer Objects).
+- [x] Implementar `ProductController`.
+- [x] Implementar Global Exception Handling (Arquitectura de Errores).
+- [x] Refactorizar a DTOs (Data Transfer Objects).
+
+## Día 2 (Cont.): Desacoplamiento con DTOs (Data Transfer Objects)
+
+### 1. ¿Por qué implementamos DTOs en este punto?
+**Por qué:** Para separar la estructura de la base de datos (Entidades) de la estructura que enviamos al cliente (Frontend).
+**Para qué:** 
+- **Seguridad**: Evitamos enviar campos internos o sensibles.
+- **Desacoplamiento**: Podemos cambiar la DB sin romper el Frontend.
+- **Simplificación**: Unificamos datos, como traer el nombre de la categoría directamente en el JSON del producto.
+**Cómo:** Creamos `CategoryDTO` y `ProductDTO` usando Lombok (`@Data`, `@Builder`).
+
+### 2. Mapeo Manual y Relaciones
+**Aprendizaje:** En el `ProductController`, aprendimos a inyectar múltiples servicios (`IProductService` y `ICategoryService`) para poder buscar una categoría por su ID antes de crear un nuevo producto. Esto asegura la integridad referencial desde la capa de controlador.
+
+### 3. Limpieza de documentación técnica
+**Logro:** Todo el backend cuenta ahora con Javadoc profesional, eliminando todos los comentarios de instrucción y dejando el código listo para un entorno real de producción.

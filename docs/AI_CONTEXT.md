@@ -21,8 +21,12 @@
 - [x] Initial `pom.xml` configured.
 - [x] Successful Backend startup with PostgreSQL connectivity.
 - [x] Catalog Module infrastructure (Category/Product Entities, Repositories, Services) complete.
+- [x] REST Controllers for Category and Product implemented with ResponseEntity.
+- [x] Global Exception Handling infrastructure implemented.
+- [x] Data Transfer Objects (DTOs) implemented for Categories and Products.
+- [x] Professional Javadoc documentation applied across the codebase.
 
 ## Next Steps for the AI
-1.  **Expose API Endpoints**: Create REST Controllers for Category and Product.
-2.  **Global Exception Handling**: Implement the @RestControllerAdvice infrastructure.
-3.  **Data Transfer Objects (DTOs)**: Introduce DTOs for cleaner API communication (Abstraction).
+1.  **Frontend Initialization**: Set up the Next.js project.
+2.  **Validation**: Add Spring Validation (@Valid) to DTOs.
+3.  **CORS Configuration**: Enable cross-origin requests for the frontend.
