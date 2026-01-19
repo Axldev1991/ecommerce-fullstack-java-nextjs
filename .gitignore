@@ -1,0 +1,36 @@
+# Java / Maven
+target/
+*.class
+.mtj.tmp/
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+.settings/
+.project
+.classpath
+.factorypath
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+build/
+.env*.local
+.vercel
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IntelliJ / VS Code
+.idea/
+*.iml
+.vscode/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
