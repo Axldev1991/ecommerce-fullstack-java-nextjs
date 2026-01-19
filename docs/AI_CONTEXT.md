@@ -19,8 +19,10 @@
 - [x] Foundational logs (DEV_LOG, AI_CONTEXT) initialized.
 - [x] Backend directory structure created.
 - [x] Initial `pom.xml` configured.
+- [x] Successful Backend startup with PostgreSQL connectivity.
+- [x] Catalog Module infrastructure (Category/Product Entities, Repositories, Services) complete.
 
 ## Next Steps for the AI
-1.  **Application Main Class**: Create the entry point for Spring Boot.
-2.  **Configuration**: Set up `application.yml` for database connectivity.
-3.  **Base Classes**: Define `BaseEntity` and `GlobalExceptionHandler`.
+1.  **Expose API Endpoints**: Create REST Controllers for Category and Product.
+2.  **Global Exception Handling**: Implement the @RestControllerAdvice infrastructure.
+3.  **Data Transfer Objects (DTOs)**: Introduce DTOs for cleaner API communication (Abstraction).

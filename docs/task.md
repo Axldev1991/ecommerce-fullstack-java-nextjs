@@ -4,15 +4,21 @@
 - [x] Establish Documentation Standards [x]
   - [x] Create `DEV_LOG.md` (Learning log)
   - [x] Create `AI_CONTEXT.md` (AI Sync log)
-- [ ] Initialize Backend Project (Spring Boot) [/]
+- [x] Initialize Backend Project (Spring Boot) [x]
   - [x] Set up `pom.xml` with modular dependencies
-  - [ ] Configure `application.yml` for PostgreSQL
-  - [ ] Create Global Exception Handling infrastructure (Abstraction)
-  - [ ] Define Base Entity (Auditing fields: createdAt, updatedAt)
+  - [x] Configure `application.yml` for PostgreSQL
+  - [/] Create Global Exception Handling infrastructure (Abstraction)
+  - [/] Define Base Entity (Auditing fields: createdAt, updatedAt)
 - [ ] Initialize Frontend Project (Next.js 15+)
   - [ ] Set up project with Tailwind CSS
   - [ ] Define shared components library (Atomic Design)
   - [ ] Implement API client abstraction (Axios/Fetch wrapper)
+- [/] Catalog Module (Phase 2)
+  - [x] Implement Category entity
+  - [x] Implement Product entity (ManyToOne)
+  - [x] Create Repositories (JpaRepository)
+  - [x] Create Catalog Services (Interfaces & Impl)
+  - [/] Create REST Controllers (API Endpoints)
 
 ## Phase 2: Catalog Module (The Storefront) [ ]
 - [ ] Backend: Category & Product Entities

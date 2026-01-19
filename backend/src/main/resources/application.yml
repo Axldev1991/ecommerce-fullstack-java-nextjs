@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    # Conectamos a localhost en el puerto por defecto (5432)
+    url: jdbc:postgresql://localhost:5432/ecommerce_db
+    # Usamos las credenciales que acabas de crear
+    username: db_user
+    password: db_pass
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      # Sincroniza automáticamente las clases Java con las tablas de la DB
+      ddl-auto: update
+    # Para que veamos en la consola de Spring las consultas que hace
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
